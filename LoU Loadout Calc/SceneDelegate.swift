@@ -1,10 +1,7 @@
-//
 //  SceneDelegate.swift
-//  LoU: Loadout Calc
-//
+//  LoU Loadout Calc
 //  Created by George Garcia on 4/6/20.
 //  Copyright © 2020 GeeTeam. All rights reserved.
-//
 
 import UIKit
 
@@ -18,17 +15,54 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let loadoutCalcNC = UINavigationController(rootViewController: LoadoutCalcVC())
-        let myLoadoutNC   = UINavigationController(rootViewController: MyLoadoutVC())
-        let itemsInfoNC   = UINavigationController(rootViewController: ItemsInfoVC())
-        let aboutNC       = UINavigationController(rootViewController: AboutVC())
-        
-        let tabbar = UITabBarController()
-        tabbar.viewControllers = [loadoutCalcNC, myLoadoutNC, itemsInfoNC, aboutNC]
-        
+        window              = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = UITabBarController()
+        
+        window?.rootViewController = createTabbar()
         window?.makeKeyAndVisible()
+    }
+    
+    func createTabbar() -> UITabBarController {
+        let tabbar                      = UITabBarController()
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.9225583076, green: 0.9140970111, blue: 0.8658707738, alpha: 1)
+        
+        tabbar.viewControllers          = [createLoadoutNC(), createMyLoadoutNC(), createItemsInfoNC(), createMusicNC(), createAboutNC()]
+        return tabbar
+    }
+    
+    func createLoadoutNC() -> UINavigationController {
+        let loadoutCalcVC        = LoadoutCalcVC()
+        loadoutCalcVC.title      = "Loadout Calculator"
+        loadoutCalcVC.tabBarItem = UITabBarItem(title: "Calculator", image: LastOfUsImages.TabBarIcon.calculator, tag: 0)
+        return UINavigationController(rootViewController: loadoutCalcVC)
+    }
+    
+    func createMyLoadoutNC() -> UINavigationController {
+        let myLoadoutVC        = MyLoadoutVC()
+        myLoadoutVC.title      = "My Loadouts"
+        myLoadoutVC.tabBarItem = UITabBarItem(title: "My Loadouts", image: LastOfUsImages.TabBarIcon.list, tag: 1)
+        return UINavigationController(rootViewController: myLoadoutVC)
+    }
+    
+    func createItemsInfoNC() -> UINavigationController {
+        let itemsInfoVC        = ItemsInfoVC()
+        itemsInfoVC.title      = "Inventory"
+        itemsInfoVC.tabBarItem = UITabBarItem(title: "Items", image: LastOfUsImages.TabBarIcon.info, tag: 2)
+        return UINavigationController(rootViewController: itemsInfoVC)
+    }
+    
+    func createMusicNC() -> UINavigationController {
+        let musicVC        = MusicVC()
+        musicVC.title      = "Music"
+        musicVC.tabBarItem = UITabBarItem(title: "Music", image: LastOfUsImages.TabBarIcon.music, tag: 3)
+        return UINavigationController(rootViewController: musicVC)
+    }
+    
+    func createAboutNC() -> UINavigationController {
+        let aboutVC        = AboutVC()
+        aboutVC.title      = "About"
+        aboutVC.tabBarItem = UITabBarItem(title: "About", image: LastOfUsImages.TabBarIcon.about, tag: 4)
+        return UINavigationController(rootViewController: aboutVC)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
