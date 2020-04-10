@@ -162,7 +162,8 @@
 		36663EE0243BDB2600F7B4DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				36815DBB243FEE0E00AF7B37 /* Controllers */,
+				36815DBF243FF0FF00AF7B37 /* UIViewControllers */,
+				36815DBB243FEE0E00AF7B37 /* UITabBarController */,
 				36747EF3243ED14A00D77373 /* UIImageView */,
 				36747EF0243ECD0C00D77373 /* UILabels */,
 				36747EED243ECB4700D77373 /* Cells */,
@@ -203,20 +204,19 @@
 			path = UIImageView;
 			sourceTree = "<group>";
 		};
-		36815DBB243FEE0E00AF7B37 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				36815DBE243FF07300AF7B37 /* UITabBarController */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		36815DBE243FF07300AF7B37 /* UITabBarController */ = {
+		36815DBB243FEE0E00AF7B37 /* UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
 				36815DBC243FEE4F00AF7B37 /* MainTC.swift */,
 			);
 			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		36815DBF243FF0FF00AF7B37 /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
