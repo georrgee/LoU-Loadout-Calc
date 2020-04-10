@@ -21,6 +21,14 @@
 		36663EE7243BDB2600F7B4DB /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663EDD243BDB2600F7B4DB /* MusicVC.swift */; };
 		36663EE9243BE16D00F7B4DB /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663EE8243BE16D00F7B4DB /* UIViewController+Ext.swift */; };
 		36663EEB243BE6DE00F7B4DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663EEA243BE6DE00F7B4DB /* Constants.swift */; };
+		36747EE7243EBEE000D77373 /* D-DIN.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36747EE5243EB80100D77373 /* D-DIN.otf */; };
+		36747EE8243EBEE300D77373 /* PressGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36747EE6243EB8B900D77373 /* PressGothic.otf */; };
+		36747EEC243ECA0700D77373 /* UITabBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EEB243ECA0700D77373 /* UITabBar+Ext.swift */; };
+		36747EEF243ECB5C00D77373 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EEE243ECB5C00D77373 /* AboutCell.swift */; };
+		36747EF2243ECD2200D77373 /* LoUTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EF1243ECD2200D77373 /* LoUTitleLabel.swift */; };
+		36747EF5243ED16700D77373 /* LoUImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EF4243ED16700D77373 /* LoUImageView.swift */; };
+		36747EF7243EE4B800D77373 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EF6243EE4B800D77373 /* AboutModel.swift */; };
+		36815DBD243FEE4F00AF7B37 /* MainTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36815DBC243FEE4F00AF7B37 /* MainTC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,14 @@
 		36663EDD243BDB2600F7B4DB /* MusicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
 		36663EE8243BE16D00F7B4DB /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		36663EEA243BE6DE00F7B4DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		36747EE5243EB80100D77373 /* D-DIN.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D-DIN.otf"; sourceTree = "<group>"; };
+		36747EE6243EB8B900D77373 /* PressGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressGothic.otf; sourceTree = "<group>"; };
+		36747EEB243ECA0700D77373 /* UITabBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Ext.swift"; sourceTree = "<group>"; };
+		36747EEE243ECB5C00D77373 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		36747EF1243ECD2200D77373 /* LoUTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoUTitleLabel.swift; sourceTree = "<group>"; };
+		36747EF4243ED16700D77373 /* LoUImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoUImageView.swift; sourceTree = "<group>"; };
+		36747EF6243EE4B800D77373 /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		36815DBC243FEE4F00AF7B37 /* MainTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,7 @@
 				36663ED7243BDB2600F7B4DB /* Controllers */,
 				36663EDF243BDB2600F7B4DB /* Utilities */,
 				36663ED3243BDB2600F7B4DB /* Helpers */,
+				36747EE4243EB7F200D77373 /* Fonts */,
 				36056311243BDA950011DE56 /* AppDelegate.swift */,
 				36056313243BDA950011DE56 /* SceneDelegate.swift */,
 				36056317243BDA950011DE56 /* Main.storyboard */,
@@ -94,6 +111,7 @@
 				36663ED4243BDB2600F7B4DB /* UIView+Layout.swift */,
 				36663ED5243BDB2600F7B4DB /* UIView+Ext.swift */,
 				36663EE8243BE16D00F7B4DB /* UIViewController+Ext.swift */,
+				36747EEB243ECA0700D77373 /* UITabBar+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -128,6 +146,7 @@
 		36663EDE243BDB2600F7B4DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				36747EF6243EE4B800D77373 /* AboutModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,8 +162,61 @@
 		36663EE0243BDB2600F7B4DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36815DBB243FEE0E00AF7B37 /* Controllers */,
+				36747EF3243ED14A00D77373 /* UIImageView */,
+				36747EF0243ECD0C00D77373 /* UILabels */,
+				36747EED243ECB4700D77373 /* Cells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		36747EE4243EB7F200D77373 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36747EE6243EB8B900D77373 /* PressGothic.otf */,
+				36747EE5243EB80100D77373 /* D-DIN.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		36747EED243ECB4700D77373 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				36747EEE243ECB5C00D77373 /* AboutCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		36747EF0243ECD0C00D77373 /* UILabels */ = {
+			isa = PBXGroup;
+			children = (
+				36747EF1243ECD2200D77373 /* LoUTitleLabel.swift */,
+			);
+			path = UILabels;
+			sourceTree = "<group>";
+		};
+		36747EF3243ED14A00D77373 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				36747EF4243ED16700D77373 /* LoUImageView.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		36815DBB243FEE0E00AF7B37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36815DBE243FF07300AF7B37 /* UITabBarController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36815DBE243FF07300AF7B37 /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				36815DBC243FEE4F00AF7B37 /* MainTC.swift */,
+			);
+			path = UITabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36747EE7243EBEE000D77373 /* D-DIN.otf in Resources */,
 				3605631E243BDA950011DE56 /* LaunchScreen.storyboard in Resources */,
 				3605631B243BDA950011DE56 /* Assets.xcassets in Resources */,
 				36056319243BDA950011DE56 /* Main.storyboard in Resources */,
+				36747EE8243EBEE300D77373 /* PressGothic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,15 +292,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36747EF2243ECD2200D77373 /* LoUTitleLabel.swift in Sources */,
+				36815DBD243FEE4F00AF7B37 /* MainTC.swift in Sources */,
 				36663EE2243BDB2600F7B4DB /* UIView+Ext.swift in Sources */,
 				36663EEB243BE6DE00F7B4DB /* Constants.swift in Sources */,
 				36663EE3243BDB2600F7B4DB /* AboutVC.swift in Sources */,
+				36747EEC243ECA0700D77373 /* UITabBar+Ext.swift in Sources */,
 				36663EE9243BE16D00F7B4DB /* UIViewController+Ext.swift in Sources */,
 				36663EE5243BDB2600F7B4DB /* ItemsInfoVC.swift in Sources */,
+				36747EF7243EE4B800D77373 /* AboutModel.swift in Sources */,
 				36663EE6243BDB2600F7B4DB /* MyLoadoutVC.swift in Sources */,
 				36663EE4243BDB2600F7B4DB /* LoadoutCalcVC.swift in Sources */,
 				36663EE7243BDB2600F7B4DB /* MusicVC.swift in Sources */,
+				36747EEF243ECB5C00D77373 /* AboutCell.swift in Sources */,
 				36056312243BDA950011DE56 /* AppDelegate.swift in Sources */,
+				36747EF5243ED16700D77373 /* LoUImageView.swift in Sources */,
 				36056314243BDA950011DE56 /* SceneDelegate.swift in Sources */,
 				36663EE1243BDB2600F7B4DB /* UIView+Layout.swift in Sources */,
 			);
@@ -304,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

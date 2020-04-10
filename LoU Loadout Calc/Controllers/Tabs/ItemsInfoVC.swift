@@ -9,6 +9,11 @@ class ItemsInfoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupEntireUI()
+    }
+    
+    private func setupEntireUI() {
         setBackgroundWithImage()
+        configureNavigationBar()
     }
 }
