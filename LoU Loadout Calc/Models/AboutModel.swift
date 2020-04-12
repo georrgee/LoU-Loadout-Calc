@@ -12,6 +12,6 @@ struct AboutModel {
     
     static let list: [AboutModel] = [
         AboutModel(iconImage: LastOfUsImages.AboutIcons.settingsIcon!, title: "SETTINGS"),
-        AboutModel(iconImage: LastOfUsImages.AboutIcons.developerIcon!, title: "DEVELOPED BY GEORGE")
+        AboutModel(iconImage: LastOfUsImages.AboutIcons.developerIcon!, title: "DEVELOPED BY PERUCAN")
     ]
 }

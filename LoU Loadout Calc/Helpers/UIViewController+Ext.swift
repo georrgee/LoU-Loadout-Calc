@@ -8,10 +8,11 @@ import UIKit
 extension UIViewController {
     
     func setBackgroundWithImage() {
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "background-portrait")
-        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
-        view.insertSubview(backgroundImage, at: 0)
+//        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+//        backgroundImage.image = UIImage(named: "background-portrait")
+//        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+//        view.insertSubview(backgroundImage, at: 0)
+        self.view.backgroundColor = UIColor(patternImage: LastOfUsImages.BackgroundImage.backgroundPortrait!)
     }
     
     func configureNavigationBar() {

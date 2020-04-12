@@ -10,7 +10,7 @@ class AboutCell: UITableViewCell {
     static let reuseCellID = "AboutCell"
     
     lazy var cellImageView  = LoUImageView(frame: .zero)
-    lazy var titleLabel     = LoUTitleLabel(textAlignment: .left, fontSize: 24)
+    lazy var titleLabel     = LoUTitleLabel(textAlignment: .left, fontSize: 20)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -20,8 +20,10 @@ class AboutCell: UITableViewCell {
     private func configureCell() {
         addSubviews(cellImageView, titleLabel)
         
-        accessoryType = .disclosureIndicator
+        accessoryType   = .disclosureIndicator
         backgroundColor = UIColor(red: 0.1647058824, green: 0.1568627451, blue: 0.1568627451, alpha: 0.5)
+        selectionStyle  = .none
+        
         let padding: CGFloat = 12
         
         cellImageView.centerYInSuperview()
@@ -31,8 +33,9 @@ class AboutCell: UITableViewCell {
         titleLabel.anchor(top: .none, leading: cellImageView.trailingAnchor, bottom: .none, trailing: self.trailingAnchor, padding: .init(top: 0, left: 24, bottom: 0, right: padding), size: .init(width: 0, height: 40))
     }
     
-    func configureCellImage(image: UIImage) {
-        cellImageView.image = image
+    func set(about: AboutModel) {
+        titleLabel.text     = about.title
+        cellImageView.image = about.iconImage
     }
     
     required init?(coder: NSCoder) {
