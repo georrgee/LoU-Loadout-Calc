@@ -13,7 +13,7 @@ class MyLoadoutVC: UIViewController {
     }
     
     private func setupEntireUI() {
-        setBackgroundWithImage()
+        setBGImageForVC()
         configureNavigationBar()
     }
 }

@@ -5,6 +5,22 @@
 
 import UIKit
 
+struct YouTubeAPI {
+    static let apiKey       = "AIzaSyCuVovqzv7Ol9G3j6ClfB9RnpHXX0BsIAU"
+    static let playlistID   = "PL3C8IoEFx1u-Y4gP5fW0GkVDe_UdI_RVz"
+    //static let playlistURL  = "https://youtube.com/playlist?list=PL3C8IoEFx1u-Y4gP5fW0GkVDe_UdI_RVz"
+
+    
+    struct Thumbnail {
+        static let URL = "https://img.youtube.com/vi/"
+    }
+}
+
+enum YouTubeThumbnailType {
+    static let defaultThumbnail = "/default.jpg"
+    static let mediumQuality    = "/mqdefault.jpg"
+}
+
 enum LastOfUsImages {
     
     static let placeholder = UIImage(named: "firefly-logo")?.withRenderingMode(.automatic)
@@ -31,6 +47,11 @@ struct LoUFonts {
     
     static let logoFont = "PressGothic"
     static let textDIN  = "D-DIN"
+}
+
+struct LoUColors {
+    
+    static let backgroundCellColor = UIColor(red: 0.1647058824, green: 0.1568627451, blue: 0.1568627451, alpha: 0.5)
 }
 
 struct Feedback {

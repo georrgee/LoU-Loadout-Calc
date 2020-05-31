@@ -8,6 +8,8 @@ import UIKit
 class AboutCell: UITableViewCell {
     
     static let reuseCellID = "AboutCell"
+    let padding: CGFloat   = 12
+
     
     lazy var cellImageView  = LoUImageView(frame: .zero)
     lazy var titleLabel     = LoUTitleLabel(textAlignment: .left, fontSize: 20)
@@ -23,9 +25,7 @@ class AboutCell: UITableViewCell {
         accessoryType   = .disclosureIndicator
         backgroundColor = UIColor(red: 0.1647058824, green: 0.1568627451, blue: 0.1568627451, alpha: 0.5)
         selectionStyle  = .none
-        
-        let padding: CGFloat = 12
-        
+                
         cellImageView.centerYInSuperview()
         cellImageView.anchor(top: .none, leading: self.leadingAnchor, bottom: .none, trailing: .none, padding: .init(top: 0, left: padding, bottom: 0, right: 0), size: .init(width: 40, height: 40))
         

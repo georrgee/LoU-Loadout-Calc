@@ -12,6 +12,13 @@
 		36056319243BDA950011DE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36056317243BDA950011DE56 /* Main.storyboard */; };
 		3605631B243BDA950011DE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3605631A243BDA950011DE56 /* Assets.xcassets */; };
 		3605631E243BDA950011DE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3605631C243BDA950011DE56 /* LaunchScreen.storyboard */; };
+		360EFE202474EC27003FAA58 /* PerksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360EFE1F2474EC27003FAA58 /* PerksController.swift */; };
+		3617C953245F7E0F006B012A /* WeaponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3617C952245F7E0F006B012A /* WeaponController.swift */; };
+		361938832456620D00EF5E29 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361938822456620D00EF5E29 /* Inventory.swift */; };
+		3626CCCE245A821600C1944B /* WeaponPerksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626CCCD245A821600C1944B /* WeaponPerksConstants.swift */; };
+		3630C73B245CE6C7007D88F0 /* InventoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630C73A245CE6C7007D88F0 /* InventoryHeader.swift */; };
+		36635F0E2454CC8F00055CDA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36635F0D2454CC8F00055CDA /* NetworkManager.swift */; };
+		36635F102454D55300055CDA /* YTVideoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36635F0F2454D55300055CDA /* YTVideoImageView.swift */; };
 		36663EE1243BDB2600F7B4DB /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663ED4243BDB2600F7B4DB /* UIView+Layout.swift */; };
 		36663EE2243BDB2600F7B4DB /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663ED5243BDB2600F7B4DB /* UIView+Ext.swift */; };
 		36663EE3243BDB2600F7B4DB /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663ED9243BDB2600F7B4DB /* AboutVC.swift */; };
@@ -21,6 +28,9 @@
 		36663EE7243BDB2600F7B4DB /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663EDD243BDB2600F7B4DB /* MusicVC.swift */; };
 		36663EE9243BE16D00F7B4DB /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663EE8243BE16D00F7B4DB /* UIViewController+Ext.swift */; };
 		36663EEB243BE6DE00F7B4DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36663EEA243BE6DE00F7B4DB /* Constants.swift */; };
+		366DFDCD2442AE8100FFD411 /* Nice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 366DFDCC2442AE8100FFD411 /* Nice.mp3 */; };
+		366DFDCF2442B0BE00FFD411 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DFDCE2442B0BE00FFD411 /* Sound.swift */; };
+		366DFDD12442B2FF00FFD411 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DFDD02442B2FF00FFD411 /* SettingsCell.swift */; };
 		36747EE7243EBEE000D77373 /* D-DIN.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36747EE5243EB80100D77373 /* D-DIN.otf */; };
 		36747EE8243EBEE300D77373 /* PressGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36747EE6243EB8B900D77373 /* PressGothic.otf */; };
 		36747EEC243ECA0700D77373 /* UITabBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EEB243ECA0700D77373 /* UITabBar+Ext.swift */; };
@@ -28,9 +38,14 @@
 		36747EF2243ECD2200D77373 /* LoUTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EF1243ECD2200D77373 /* LoUTitleLabel.swift */; };
 		36747EF5243ED16700D77373 /* LoUImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EF4243ED16700D77373 /* LoUImageView.swift */; };
 		36747EF7243EE4B800D77373 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747EF6243EE4B800D77373 /* AboutModel.swift */; };
+		3674D671245351B100AB3CE2 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674D670245351B100AB3CE2 /* VideoCell.swift */; };
+		3674D673245357C800AB3CE2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674D672245357C800AB3CE2 /* Video.swift */; };
 		36815DBD243FEE4F00AF7B37 /* MainTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36815DBC243FEE4F00AF7B37 /* MainTC.swift */; };
 		36815DC4244009A000AF7B37 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36815DC3244009A000AF7B37 /* SettingsVC.swift */; };
-		36DEDEC124400BFB00408C7A /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DEDEC024400BFB00408C7A /* UITableView+Ext.swift */; };
+		3698968E2463AF880092DDC8 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698968D2463AF880092DDC8 /* CustomUIView.swift */; };
+		36C2CD3C245BED0000470CEF /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C2CD3B245BED0000470CEF /* InventoryCell.swift */; };
+		36CC054824469ED900CB5127 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC054724469ED900CB5127 /* SettingsModel.swift */; };
+		36DEDEC124400BFB00408C7A /* UITableView+UITableVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DEDEC024400BFB00408C7A /* UITableView+UITableVC+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +56,13 @@
 		3605631A243BDA950011DE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3605631D243BDA950011DE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3605631F243BDA950011DE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360EFE1F2474EC27003FAA58 /* PerksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerksController.swift; sourceTree = "<group>"; };
+		3617C952245F7E0F006B012A /* WeaponController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponController.swift; sourceTree = "<group>"; };
+		361938822456620D00EF5E29 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		3626CCCD245A821600C1944B /* WeaponPerksConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPerksConstants.swift; sourceTree = "<group>"; };
+		3630C73A245CE6C7007D88F0 /* InventoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryHeader.swift; sourceTree = "<group>"; };
+		36635F0D2454CC8F00055CDA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		36635F0F2454D55300055CDA /* YTVideoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTVideoImageView.swift; sourceTree = "<group>"; };
 		36663ED4243BDB2600F7B4DB /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		36663ED5243BDB2600F7B4DB /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		36663ED9243BDB2600F7B4DB /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
@@ -50,6 +72,9 @@
 		36663EDD243BDB2600F7B4DB /* MusicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
 		36663EE8243BE16D00F7B4DB /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		36663EEA243BE6DE00F7B4DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		366DFDCC2442AE8100FFD411 /* Nice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nice.mp3; sourceTree = "<group>"; };
+		366DFDCE2442B0BE00FFD411 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		366DFDD02442B2FF00FFD411 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		36747EE5243EB80100D77373 /* D-DIN.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D-DIN.otf"; sourceTree = "<group>"; };
 		36747EE6243EB8B900D77373 /* PressGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressGothic.otf; sourceTree = "<group>"; };
 		36747EEB243ECA0700D77373 /* UITabBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Ext.swift"; sourceTree = "<group>"; };
@@ -57,9 +82,14 @@
 		36747EF1243ECD2200D77373 /* LoUTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoUTitleLabel.swift; sourceTree = "<group>"; };
 		36747EF4243ED16700D77373 /* LoUImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoUImageView.swift; sourceTree = "<group>"; };
 		36747EF6243EE4B800D77373 /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		3674D670245351B100AB3CE2 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		3674D672245357C800AB3CE2 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		36815DBC243FEE4F00AF7B37 /* MainTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTC.swift; sourceTree = "<group>"; };
 		36815DC3244009A000AF7B37 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		36DEDEC024400BFB00408C7A /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		3698968D2463AF880092DDC8 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		36C2CD3B245BED0000470CEF /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
+		36CC054724469ED900CB5127 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		36DEDEC024400BFB00408C7A /* UITableView+UITableVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+UITableVC+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +140,16 @@
 			path = "LoU Loadout Calc";
 			sourceTree = "<group>";
 		};
+		3617C951245F7DD1006B012A /* Guns-Skills */ = {
+			isa = PBXGroup;
+			children = (
+				36663EDB243BDB2600F7B4DB /* ItemsInfoVC.swift */,
+				3617C952245F7E0F006B012A /* WeaponController.swift */,
+				360EFE1F2474EC27003FAA58 /* PerksController.swift */,
+			);
+			path = "Guns-Skills";
+			sourceTree = "<group>";
+		};
 		36663ED3243BDB2600F7B4DB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +157,7 @@
 				36663ED5243BDB2600F7B4DB /* UIView+Ext.swift */,
 				36663EE8243BE16D00F7B4DB /* UIViewController+Ext.swift */,
 				36747EEB243ECA0700D77373 /* UITabBar+Ext.swift */,
-				36DEDEC024400BFB00408C7A /* UITableView+Ext.swift */,
+				36DEDEC024400BFB00408C7A /* UITableView+UITableVC+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -125,6 +165,7 @@
 		36663ED6243BDB2600F7B4DB /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				36635F0D2454CC8F00055CDA /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -140,10 +181,10 @@
 		36663ED8243BDB2600F7B4DB /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				3617C951245F7DD1006B012A /* Guns-Skills */,
 				36815DC12440096900AF7B37 /* About */,
 				36663EDA243BDB2600F7B4DB /* LoadoutCalcVC.swift */,
 				36663EDC243BDB2600F7B4DB /* MyLoadoutVC.swift */,
-				36663EDB243BDB2600F7B4DB /* ItemsInfoVC.swift */,
 				36663EDD243BDB2600F7B4DB /* MusicVC.swift */,
 			);
 			path = Tabs;
@@ -153,6 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				36747EF6243EE4B800D77373 /* AboutModel.swift */,
+				366DFDCE2442B0BE00FFD411 /* Sound.swift */,
+				36CC054724469ED900CB5127 /* SettingsModel.swift */,
+				3674D672245357C800AB3CE2 /* Video.swift */,
+				361938822456620D00EF5E29 /* Inventory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				36663EEA243BE6DE00F7B4DB /* Constants.swift */,
+				3626CCCD245A821600C1944B /* WeaponPerksConstants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -173,6 +219,8 @@
 				36747EF3243ED14A00D77373 /* UIImageView */,
 				36747EF0243ECD0C00D77373 /* UILabels */,
 				36747EED243ECB4700D77373 /* Cells */,
+				3630C73A245CE6C7007D88F0 /* InventoryHeader.swift */,
+				3698968D2463AF880092DDC8 /* CustomUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				36747EEE243ECB5C00D77373 /* AboutCell.swift */,
+				366DFDD02442B2FF00FFD411 /* SettingsCell.swift */,
+				3674D670245351B100AB3CE2 /* VideoCell.swift */,
+				36C2CD3B245BED0000470CEF /* InventoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -206,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				36747EF4243ED16700D77373 /* LoUImageView.swift */,
+				36635F0F2454D55300055CDA /* YTVideoImageView.swift */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -228,6 +280,7 @@
 		36815DC0243FF14100AF7B37 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				366DFDCC2442AE8100FFD411 /* Nice.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -236,17 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				36663ED9243BDB2600F7B4DB /* AboutVC.swift */,
-				36815DC22440097500AF7B37 /* Table Cells */,
-			);
-			path = About;
-			sourceTree = "<group>";
-		};
-		36815DC22440097500AF7B37 /* Table Cells */ = {
-			isa = PBXGroup;
-			children = (
 				36815DC3244009A000AF7B37 /* SettingsVC.swift */,
 			);
-			path = "Table Cells";
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +355,7 @@
 				36747EE7243EBEE000D77373 /* D-DIN.otf in Resources */,
 				3605631E243BDA950011DE56 /* LaunchScreen.storyboard in Resources */,
 				3605631B243BDA950011DE56 /* Assets.xcassets in Resources */,
+				366DFDCD2442AE8100FFD411 /* Nice.mp3 in Resources */,
 				36056319243BDA950011DE56 /* Main.storyboard in Resources */,
 				36747EE8243EBEE300D77373 /* PressGothic.otf in Resources */,
 			);
@@ -323,22 +369,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				36747EF2243ECD2200D77373 /* LoUTitleLabel.swift in Sources */,
+				3698968E2463AF880092DDC8 /* CustomUIView.swift in Sources */,
 				36815DBD243FEE4F00AF7B37 /* MainTC.swift in Sources */,
+				36CC054824469ED900CB5127 /* SettingsModel.swift in Sources */,
+				361938832456620D00EF5E29 /* Inventory.swift in Sources */,
 				36663EE2243BDB2600F7B4DB /* UIView+Ext.swift in Sources */,
 				36663EEB243BE6DE00F7B4DB /* Constants.swift in Sources */,
 				36663EE3243BDB2600F7B4DB /* AboutVC.swift in Sources */,
 				36747EEC243ECA0700D77373 /* UITabBar+Ext.swift in Sources */,
-				36DEDEC124400BFB00408C7A /* UITableView+Ext.swift in Sources */,
+				3630C73B245CE6C7007D88F0 /* InventoryHeader.swift in Sources */,
+				36DEDEC124400BFB00408C7A /* UITableView+UITableVC+Ext.swift in Sources */,
 				36663EE9243BE16D00F7B4DB /* UIViewController+Ext.swift in Sources */,
 				36663EE5243BDB2600F7B4DB /* ItemsInfoVC.swift in Sources */,
 				36747EF7243EE4B800D77373 /* AboutModel.swift in Sources */,
 				36663EE6243BDB2600F7B4DB /* MyLoadoutVC.swift in Sources */,
+				36C2CD3C245BED0000470CEF /* InventoryCell.swift in Sources */,
+				360EFE202474EC27003FAA58 /* PerksController.swift in Sources */,
+				3626CCCE245A821600C1944B /* WeaponPerksConstants.swift in Sources */,
 				36663EE4243BDB2600F7B4DB /* LoadoutCalcVC.swift in Sources */,
+				3674D673245357C800AB3CE2 /* Video.swift in Sources */,
+				3674D671245351B100AB3CE2 /* VideoCell.swift in Sources */,
 				36663EE7243BDB2600F7B4DB /* MusicVC.swift in Sources */,
 				36747EEF243ECB5C00D77373 /* AboutCell.swift in Sources */,
+				3617C953245F7E0F006B012A /* WeaponController.swift in Sources */,
+				366DFDD12442B2FF00FFD411 /* SettingsCell.swift in Sources */,
 				36056312243BDA950011DE56 /* AppDelegate.swift in Sources */,
+				36635F102454D55300055CDA /* YTVideoImageView.swift in Sources */,
+				366DFDCF2442B0BE00FFD411 /* Sound.swift in Sources */,
 				36747EF5243ED16700D77373 /* LoUImageView.swift in Sources */,
 				36056314243BDA950011DE56 /* SceneDelegate.swift in Sources */,
+				36635F0E2454CC8F00055CDA /* NetworkManager.swift in Sources */,
 				36663EE1243BDB2600F7B4DB /* UIView+Layout.swift in Sources */,
 				36815DC4244009A000AF7B37 /* SettingsVC.swift in Sources */,
 			);

@@ -8,7 +8,7 @@ import UIKit
 struct AboutModel {
     
     let iconImage: UIImage
-    let title:         String
+    let title:     String
     
     static let list: [AboutModel] = [
         AboutModel(iconImage: LastOfUsImages.AboutIcons.settingsIcon!, title: "SETTINGS"),

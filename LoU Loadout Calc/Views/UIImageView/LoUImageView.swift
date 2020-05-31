@@ -18,7 +18,8 @@ class LoUImageView: UIImageView {
         layer.cornerRadius = 10
         clipsToBounds      = true // you want the image to be inside the imageview
         image              = placeHolderImage
-        contentMode        = .scaleAspectFill
+        contentMode        = .scaleAspectFit
+        //contentMode        = .scaleAspectFill
         translatesAutoresizingMaskIntoConstraints = false
     }
     

@@ -22,6 +22,7 @@ class LoUTitleLabel: UILabel {
         textColor                 = .white
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor        = 0.9
+        numberOfLines             = 2
         lineBreakMode             = .byTruncatingTail
         
         translatesAutoresizingMaskIntoConstraints = false

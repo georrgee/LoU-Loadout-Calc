@@ -6,24 +6,20 @@
 import UIKit
 
 class AboutVC: UITableViewController {
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupEntireUI()
     }
     
-    private func setupEntireUI() {
-        //setBackgroundWithImage()
-        setTCBackgroundWithImage()
+    fileprivate func setupEntireUI() {
+        setBGImageForTableVC()
         configureNavigationBar()
         configureTableView()
     }
     
-    private func configureTableView() {
-        //view.addSubview(aboutTableView)
-        //tableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
-        //tableView.backgroundColor = .clear
-        tableView.rowHeight = 80
+    fileprivate func configureTableView() {
+        tableView.rowHeight  = 80
         tableView.delegate   = self
         tableView.dataSource = self
         tableView.removeExcessCells()

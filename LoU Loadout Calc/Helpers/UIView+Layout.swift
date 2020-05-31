@@ -137,3 +137,21 @@ extension UIStackView {
         insertSubview(subView, at: 0)
     }
 }
+
+enum UIHelper {
+    
+    static func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
+        
+        let width                       = view.bounds.width
+        let paddingInset: CGFloat       = 12
+        let minimumItemSpacing: CGFloat = 10
+        let availableWidth              = width - (paddingInset * 2) - (minimumItemSpacing * 2)
+        let itemWidth                   = availableWidth /  3
+        
+        let flowLayout          = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: paddingInset, left: paddingInset, bottom: paddingInset, right: paddingInset)
+        flowLayout.itemSize     = CGSize(width: itemWidth, height: itemWidth + 40)
+        
+        return flowLayout
+    }
+}
