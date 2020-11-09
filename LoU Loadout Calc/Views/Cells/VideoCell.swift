@@ -37,7 +37,13 @@ class VideoCell: UITableViewCell {
     
     fileprivate func setupCellImageView() {
         
-        videoImageView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: .none, padding: .init(top: 5, left: 5, bottom: 5, right: 0), size: .init(width: 120, height: 64))
+        videoImageView.anchor(top: topAnchor,
+                              leading: leadingAnchor,
+                              bottom: bottomAnchor,
+                              trailing: .none,
+                              padding: .init(top: 5, left: 5, bottom: 5, right: 0),
+                              size: .init(width: 120, height: 64))
+        
         videoImageView.backgroundColor = .red
     }
     

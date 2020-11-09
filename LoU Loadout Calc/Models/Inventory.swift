@@ -138,5 +138,3 @@ let perksList: [Perk] = [
     
     Perk(perkName: "Strategist", perkImage: PerkImages.Strategist.strat1, perkPoints: 1, perkDetails: "Know when you've been marked", level2Perk: Perk.Level2(perkName: "Strategist 2", perkImage: PerkImages.Strategist.strat2, perkPoints: 4, perkDetails: "Know when you've been marked and see nearby enemies on the radar"), level3Perk: Perk.Level3(perkName: "Strategist 3", perkImage: PerkImages.Strategist.strat3, perkPoints: 5, perkDetails: "Know when you've been marked, see nearby enemies on the radar and can choose an ally to respawn on. You will be able to respawn several seconds early"))
 ]
-
-
