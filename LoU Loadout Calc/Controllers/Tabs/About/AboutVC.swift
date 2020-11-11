@@ -37,6 +37,8 @@ extension AboutVC {
             navigationController?.pushViewController(SettingsVC(), animated: true)
         case 1:
             print("Tapped Developer")
+        case 2:
+            print("Tapped App Version")
         default:
             print("Cell doesn't exist")
         }

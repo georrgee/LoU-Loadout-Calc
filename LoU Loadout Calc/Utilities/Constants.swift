@@ -40,8 +40,17 @@ enum LastOfUsImages {
     enum AboutIcons {
         static let developerIcon = UIImage(named: "icon-developer")?.withRenderingMode(.automatic)
         static let settingsIcon  = UIImage(named: "icon-settings")?.withRenderingMode(.automatic)
+        static let appVersionIcon = UIImage(systemName: SFSymbols.appVersion)?.withTintColor(.label).withRenderingMode(.alwaysOriginal)
+            
     }
+    
+    enum SFSymbols {
+        static let appVersion = "a.circle.fill"
+    }
+
 }
+
+
 
 struct LoUFonts {
     
@@ -61,3 +70,6 @@ struct Feedback {
     static let mediumFeedback = UIImpactFeedbackGenerator(style: .medium)
     static let lightFeedback  = UIImpactFeedbackGenerator(style: .light)
 }
+
+
+
