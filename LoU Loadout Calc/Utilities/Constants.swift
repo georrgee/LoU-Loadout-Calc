@@ -41,11 +41,13 @@ enum LastOfUsImages {
         static let developerIcon = UIImage(named: "icon-developer")?.withRenderingMode(.automatic)
         static let settingsIcon  = UIImage(named: "icon-settings")?.withRenderingMode(.automatic)
         static let appVersionIcon = UIImage(systemName: SFSymbols.appVersion)?.withTintColor(.label).withRenderingMode(.alwaysOriginal)
+        static let lightBulb = UIImage(named: "icon-foundersWebsite")
             
     }
     
     enum SFSymbols {
         static let appVersion = "a.circle.fill"
+        static let lightBulb = "lightbulb.fill"
     }
 
 }

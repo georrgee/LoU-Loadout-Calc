@@ -4,6 +4,7 @@
 //  Copyright © 2020 GeeTeam. All rights reserved.
 
 import UIKit
+import SafariServices
 
 extension UIViewController {
     
@@ -35,5 +36,19 @@ extension UIViewController {
             let names = UIFont.fontNames(forFamilyName: family)
             print("Family: \(family) Font Names: \(names)")
         }
+    }
+    
+    func presentSafariVC(with url: URL) {
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.preferredControlTintColor = .systemBackground
+        present(safariVC, animated: true)
+    }
+    
+    func presentCreatersWebsite() {
+
+        guard let url = URL(string: "https://tlou-loadout.com/") else { return}
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.preferredBarTintColor = .systemBackground
+        present(safariVC, animated: true)
     }
 }
