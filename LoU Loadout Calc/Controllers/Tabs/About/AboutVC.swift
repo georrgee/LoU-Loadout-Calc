@@ -4,6 +4,7 @@
 //  Copyright © 2020 GeeTeam. All rights reserved.
 
 import UIKit
+import SafariServices
 
 class AboutVC: UITableViewController {
     
@@ -39,6 +40,8 @@ extension AboutVC {
             print("Tapped Developer")
         case 2:
             print("Tapped App Version")
+        case 3:
+            presentCreatersWebsite()
         default:
             print("Cell doesn't exist")
         }
