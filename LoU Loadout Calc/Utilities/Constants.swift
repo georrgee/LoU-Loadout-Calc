@@ -6,19 +6,19 @@
 import UIKit
 
 struct YouTubeAPI {
-    static let apiKey       = "AIzaSyCuVovqzv7Ol9G3j6ClfB9RnpHXX0BsIAU"
-    static let playlistID   = "PL3C8IoEFx1u-Y4gP5fW0GkVDe_UdI_RVz"
-    //static let playlistURL  = "https://youtube.com/playlist?list=PL3C8IoEFx1u-Y4gP5fW0GkVDe_UdI_RVz"
+    static var API_KEY       = "AIzaSyDdntLZztqjl69REF1zZYkO8j1zkqG8Y1I"
+    static var PLAYLIST_ID   = "PL3C8IoEFx1u-Y4gP5fW0GkVDe_UdI_RVz"
+    static var PLAYLIST_URL  = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(YouTubeAPI.PLAYLIST_ID)&key=\(YouTubeAPI.API_KEY)"
 
     
     struct Thumbnail {
-        static let URL = "https://img.youtube.com/vi/"
+        static var URL = "https://img.youtube.com/vi/"
     }
 }
 
 enum YouTubeThumbnailType {
-    static let defaultThumbnail = "/default.jpg"
-    static let mediumQuality    = "/mqdefault.jpg"
+    static var defaultThumbnail = "/default.jpg"
+    static var mediumQuality    = "/mqdefault.jpg"
 }
 
 enum LastOfUsImages {

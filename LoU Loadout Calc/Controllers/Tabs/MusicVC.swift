@@ -13,6 +13,9 @@ class MusicVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupEntireUI()
+        
+        NetworkManager.shared.getVideos()
+ 
         //fetchPlaylistVideos()
         //self.videos = VideoModel.getVideos()
     }
@@ -34,30 +37,6 @@ class MusicVC: UIViewController {
         
         videosTableView.removeExcessCells()
         videosTableView.register(VideoCell.self, forCellReuseIdentifier: VideoCell.reuseCellID)
-    }
-    
-    fileprivate func fetchPlaylistVideos() {
-        
-        let session = URLSession.shared
-        var datatask : URLSessionDataTask?
-
-//        let url = URL(string: "https://www.googleapis.com/youtube/v3/playlistItems?key=\(YouTubeAPI.apiKey)")
-        let url = URL(string: "https://www.googleapis.com/youtube/v3/playlistItems")
-        var request =  URLRequest(url: url!)
-        request.httpMethod = "GET"
-        request.allHTTPHeaderFields = ["part":"snippet", "playlistId":YouTubeAPI.playlistID, "key":YouTubeAPI.apiKey]
-        
-        let task = session.dataTask(with: request) { (data, response, error) in
-            if error == nil {
-                let receivedData = try? JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
-                print(receivedData)
-            }
-        }
-        task.resume()
-//        NetworkManager.shared.fetchVideosFromPlaylist(from: YouTubeAPI.playlistURL) { (result) in
-//            print(result.count)
-//        }
-        
     }
 }
 
