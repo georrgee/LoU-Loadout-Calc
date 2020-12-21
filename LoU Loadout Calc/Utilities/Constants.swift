@@ -49,6 +49,15 @@ enum LastOfUsImages {
         static let appVersion = "a.circle.fill"
         static let lightBulb = "lightbulb.fill"
     }
+    
+    enum CalculatorIcons {
+        static let resetIcon = UIImage(named: "icon-reset")?.withRenderingMode(.automatic)
+        static let randomIcon = UIImage(named: "icon-random")?.withRenderingMode(.automatic)
+        static let shareIcon = UIImage(named: "icon-share")?.withRenderingMode(.automatic)
+        static let gearIcon = UIImage(named: "icon-gear")?.withRenderingMode(.automatic)
+        static let nothingIcon = UIImage(named: "icon-nothing")?.withRenderingMode(.automatic)
+        static let revolverIcon = UIImage(named: "icon-revolver")?.withRenderingMode(.automatic)
+    }
 
 }
 
