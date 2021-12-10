@@ -15,36 +15,6 @@ final class NetworkManager {
     static let shared    = NetworkManager()
     let cache            = NSCache<NSString, UIImage>()
     
-    public func getPlaylistVideos(completion: @escaping (Result<PlaylistItem, Error>) -> Void) {
-        
-        let session = URLSession(configuration: .default)
-        guard let url = URL(string: YouTubeAPI.PLAYLIST_URL) else { return }
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        
-//        request.setValue("application/json", forHTTPHeaderField: "Accept")
-//        request.setValue("Bearer \(YouTubeAPI.API_KEY)", forHTTPHeaderField: "Authorization")
-//
-        let task = session.dataTask(with: request) { (data, response, error) in
-            guard let data = data, error == nil else {
-                print("Failed to Fetch Playlist Videos!")
-                completion(.failure(APIError.failedToFetchData))
-                return
-            }
-            
-            do {
-                let json = try JSONDecoder().decode(PlaylistItem.self, from: data)
-                completion(.success(json))
-                //print("JSON DATA: \(json)")
-//                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-//                print(json)
-            } catch let jsonError {
-                print(jsonError)
-            }
-        }
-        
-        task.resume()
-    }
     
     func downloadImage(from urlString: String, completed: @escaping(UIImage?) -> Void) {
             

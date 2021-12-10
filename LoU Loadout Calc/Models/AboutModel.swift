@@ -14,7 +14,7 @@ struct AboutModel {
         AboutModel(iconImage: LastOfUsImages.AboutIcons.settingsIcon!, title: "SETTINGS"),
         AboutModel(iconImage: LastOfUsImages.AboutIcons.developerIcon!, title: "DEVELOPED BY PERUCAN"),
         AboutModel(iconImage: LastOfUsImages.AboutIcons.lightBulb!, title: "OG CREATOR'S TWITTER"),
-        AboutModel(iconImage: LastOfUsImages.AboutIcons.appVersionIcon, title: "APP VERSION:  \(appVersion())")
+        //AboutModel(iconImage: LastOfUsImages.AboutIcons.appVersionIcon, title: "APP VERSION:  \(appVersion())")
     ]
 }
 
