@@ -6,10 +6,11 @@
 import UIKit
 
 struct YouTubeAPI {
-    static var API_KEY       = "AIzaSyCN-F641HQisqloQ2JBYlftxHfe0BPXZ9w"
+    static var API_KEY       = "AIzaSyDdntLZztqjl69REF1zZYkO8j1zkqG8Y1I"
     static var PLAYLIST_ID   = "PL3C8IoEFx1u-Y4gP5fW0GkVDe_UdI_RVz"
-    static var PLAYLIST_URL  = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(PLAYLIST_ID)&key=\(API_KEY)"
+    static var PLAYLIST_URL  = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(YouTubeAPI.PLAYLIST_ID)&key=\(YouTubeAPI.API_KEY)"
 
+    
     struct Thumbnail {
         static var URL = "https://img.youtube.com/vi/"
     }
@@ -39,15 +40,28 @@ enum LastOfUsImages {
     enum AboutIcons {
         static let developerIcon = UIImage(named: "icon-developer")?.withRenderingMode(.automatic)
         static let settingsIcon  = UIImage(named: "icon-settings")?.withRenderingMode(.automatic)
-        static let appVersionIcon = UIImage(named: "icon-appVersion")!.withRenderingMode(.alwaysOriginal)
+        static let appVersionIcon = UIImage(systemName: SFSymbols.appVersion)?.withTintColor(.label).withRenderingMode(.alwaysOriginal)
         static let lightBulb = UIImage(named: "icon-foundersWebsite")
+            
     }
     
     enum SFSymbols {
         static let appVersion = "a.circle.fill"
         static let lightBulb = "lightbulb.fill"
     }
+    
+    enum CalculatorIcons {
+        static let resetIcon = UIImage(named: "icon-reset")?.withRenderingMode(.automatic)
+        static let randomIcon = UIImage(named: "icon-random")?.withRenderingMode(.automatic)
+        static let shareIcon = UIImage(named: "icon-share")?.withRenderingMode(.automatic)
+        static let gearIcon = UIImage(named: "icon-gear")?.withRenderingMode(.automatic)
+        static let nothingIcon = UIImage(named: "icon-nothing")?.withRenderingMode(.automatic)
+        static let revolverIcon = UIImage(named: "icon-revolver")?.withRenderingMode(.automatic)
+    }
+
 }
+
+
 
 struct LoUFonts {
     

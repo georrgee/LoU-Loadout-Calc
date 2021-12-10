@@ -13,9 +13,10 @@ enum WeaponImages {
     static let burstRifle       = UIImage(named: "icon-burst")!
     static let burstPistol      = UIImage(named: "icon-burstp")!
     static let crossbow         = UIImage(named: "icon-crossbow")!
+    static let double           = UIImage(named: "icon-double")!
     static let diablo           = UIImage(named: "icon-diablo")!
     static let enforcer         = UIImage(named: "icon-enforcer")!
-    static let flamethrower     = UIImage(named: "flamethrower")!
+    static let flamethrower     = UIImage(named: "icon-flamethrower")!
     static let frontier         = UIImage(named: "icon-frontier")!
     static let fullAutoRifle    = UIImage(named: "icon-full")!
     static let huntingRifle     = UIImage(named: "icon-hunting")!
