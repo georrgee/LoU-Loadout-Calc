@@ -44,9 +44,9 @@ extension UIViewController {
         present(safariVC, animated: true)
     }
     
-    func presentCreatersWebsite() {
+    func presentCreatorsTwitter() {
 
-        guard let url = URL(string: "https://tlou-loadout.com/") else { return}
+        guard let url = URL(string: "https://twitter.com/freddybushboy") else { return}
         let safariVC = SFSafariViewController(url: url)
         safariVC.preferredBarTintColor = .systemBackground
         present(safariVC, animated: true)

@@ -39,11 +39,11 @@ extension AboutVC {
         case 1:
             print("Tapped Developer")
         case 2:
-            print("Tapped App Version")
+            presentCreatorsTwitter()
         case 3:
-            presentCreatersWebsite()
+            print("App Version Tapped!")
         default:
-            print("Cell doesn't exist")
+            print("CELL DOES NOT EXIST")
         }
     }
 }

@@ -5,60 +5,47 @@
 
 import UIKit
 
+enum APIError: Error {
+    case failedToFetchData
+}
 
-class NetworkManager {
+
+final class NetworkManager {
     
     static let shared    = NetworkManager()
     let cache            = NSCache<NSString, UIImage>()
     
-    func getVideos() {
-                
-        guard let url = URL(string: YouTubeAPI.PLAYLIST_URL) else { return }
+    public func getPlaylistVideos(completion: @escaping (Result<PlaylistItem, Error>) -> Void) {
         
+        let session = URLSession(configuration: .default)
+        guard let url = URL(string: YouTubeAPI.PLAYLIST_URL) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("Bearer \(YouTubeAPI.API_KEY)", forHTTPHeaderField: "Authorization")
-
+//        request.setValue("application/json", forHTTPHeaderField: "Accept")
+//        request.setValue("Bearer \(YouTubeAPI.API_KEY)", forHTTPHeaderField: "Authorization")
+//
+        let task = session.dataTask(with: request) { (data, response, error) in
+            guard let data = data, error == nil else {
+                print("Failed to Fetch Playlist Videos!")
+                completion(.failure(APIError.failedToFetchData))
+                return
+            }
+            
+            do {
+                let json = try JSONDecoder().decode(PlaylistItem.self, from: data)
+                completion(.success(json))
+                //print("JSON DATA: \(json)")
+//                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+//                print(json)
+            } catch let jsonError {
+                print(jsonError)
+            }
+        }
         
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            print(response)
-            print(data)
-        }.resume()
-
+        task.resume()
     }
     
-//    func fetchVideosFromPlaylist(completed: @escaping ([Video]) -> Void) {
-//        
-//        let urlString = YouTubeAPI.PLAYLIST_URL
-//        guard let url = URL(string: urlString) else { return }
-//        
-//        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-//            
-//            if let _ = error {
-//                print("Error!!!")
-//            }
-//            
-//            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { return }
-//            
-//            guard let data = data else {
-//                return
-//            }
-//            
-//            // parsing json
-//            do {
-//                let decoder = JSONDecoder()
-//                decoder.keyDecodingStrategy = .convertFromSnakeCase
-//                //let videos = try decoder.decode([Video].self, from: data)
-//                print("Data: \(data)")
-//            } catch {
-//                print("Didnt parse!!")
-//            }
-//        }
-//        task.resume()
-//    }
-//    
     func downloadImage(from urlString: String, completed: @escaping(UIImage?) -> Void) {
             
         let cacheKey = NSString(string: urlString)

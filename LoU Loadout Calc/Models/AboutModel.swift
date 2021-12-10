@@ -10,12 +10,11 @@ struct AboutModel {
     let iconImage: UIImage
     let title:     String
     
-    
     static let list: [AboutModel] = [
         AboutModel(iconImage: LastOfUsImages.AboutIcons.settingsIcon!, title: "SETTINGS"),
         AboutModel(iconImage: LastOfUsImages.AboutIcons.developerIcon!, title: "DEVELOPED BY PERUCAN"),
-        AboutModel(iconImage: LastOfUsImages.AboutIcons.appVersionIcon!, title: "APP VERSION:  \(appVersion())"),
-        AboutModel(iconImage: LastOfUsImages.AboutIcons.lightBulb!, title: "CREATER'S WEBSITE")
+        AboutModel(iconImage: LastOfUsImages.AboutIcons.lightBulb!, title: "OG CREATOR'S TWITTER"),
+        AboutModel(iconImage: LastOfUsImages.AboutIcons.appVersionIcon, title: "APP VERSION:  \(appVersion())")
     ]
 }
 

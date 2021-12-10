@@ -10,19 +10,25 @@ struct Video: Codable {
     struct Snippet: Codable {
 
         struct Thumbnails: Codable {
-            var url: String
+            let url: String
         }
 
-        var title:       String
-        var description: String
-        var thumbnails:  Thumbnails
+        let title:       String
+        let description: String
+        let thumbnails:  Thumbnails
+        
+//        enum CodingKeys: String, CodingKey {
+//            case title
+//            case resourceId
+//            case thumbnails
+//        }
     }
 
     struct ContentDetails: Codable {
         var duration: String
     }
 
-    var id:             String
-    var snippet:        Snippet
-    var contentDetails: ContentDetails
+    let id:             String
+    let snippet:        Snippet
+    let contentDetails: ContentDetails
 }

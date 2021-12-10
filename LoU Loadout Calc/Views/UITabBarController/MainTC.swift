@@ -16,7 +16,8 @@ class MainTC: UITabBarController {
         tabBar.tintColor               = #colorLiteral(red: 0.9225583076, green: 0.9140970111, blue: 0.8658707738, alpha: 1)
         tabBar.unselectedItemTintColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         UITabBar.setupCustomTabbar()
-        viewControllers = [createLoadoutNC(), createMyLoadoutNC(), createItemsInfoNC(), createMusicNC(), createAboutNC()]
+//        viewControllers = [createLoadoutNC(), createMyLoadoutNC(), createItemsInfoNC(), createMusicNC(), createAboutNC()]
+        viewControllers = [createLoadoutNC(), createMyLoadoutNC(), createItemsInfoNC(), createAboutNC()]
     }
     
     private func createLoadoutNC() -> UINavigationController {
@@ -40,12 +41,12 @@ class MainTC: UITabBarController {
         return UINavigationController(rootViewController: itemsInfoVC)
     }
     
-    private func createMusicNC() -> UINavigationController {
-        let musicVC        = MusicVC()
-        musicVC.title      = "Music"
-        musicVC.tabBarItem = UITabBarItem(title: "Music", image: LastOfUsImages.TabBarIcon.music, tag: 3)
-        return UINavigationController(rootViewController: musicVC)
-    }
+//    private func createMusicNC() -> UINavigationController {
+//        let musicVC        = MusicVC()
+//        musicVC.title      = "Music"
+//        musicVC.tabBarItem = UITabBarItem(title: "Music", image: LastOfUsImages.TabBarIcon.music, tag: 3)
+//        return UINavigationController(rootViewController: musicVC)
+//    }
     
     private func createAboutNC() -> UINavigationController {
         let aboutVC        = AboutVC()

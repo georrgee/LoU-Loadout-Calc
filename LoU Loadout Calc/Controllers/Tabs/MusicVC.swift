@@ -13,11 +13,6 @@ class MusicVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupEntireUI()
-        
-        NetworkManager.shared.getVideos()
- 
-        //fetchPlaylistVideos()
-        //self.videos = VideoModel.getVideos()
     }
     
     fileprivate func setupEntireUI() {
