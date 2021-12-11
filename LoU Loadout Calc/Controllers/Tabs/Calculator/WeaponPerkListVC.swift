@@ -10,8 +10,9 @@ import UIKit
 protocol selectedHandgunDelegate {
     func selectedHandgun(selected_weapon: LoadoutCalcModel)
 }
-class WeaponPerkListVC: UITableViewController {
+class WeaponPerkListVC: UIViewController{
     
+    var tableView = UITableView()
     var delegate: selectedHandgunDelegate?
     var main_list           = [LoadoutCalcModel]()
     
@@ -50,48 +51,87 @@ class WeaponPerkListVC: UITableViewController {
     }
     
     fileprivate func setupEntireUI() {
-        setBGImageForTableVC()
+        setBGImageForVC()
         configureNavigationBar()
         configureTableView()
+        tableView.setBGImageForTableVC()
     }
     fileprivate func configureTableView() {
         
+        let displayWidth: CGFloat = self.view.frame.width
+        let displayHeight: CGFloat = self.view.frame.height
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.backgroundColor = .clear
         tableView.rowHeight  = 80
         tableView.delegate   = self
         tableView.dataSource = self
+        tableView.frame = view.bounds
         tableView.removeExcessCells()
         tableView.register(CalcCell.self, forCellReuseIdentifier: CalcCell.reuseCellID)
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+        
     }
 }
 // MARK: UITableViewDelegate
-extension WeaponPerkListVC {
+extension WeaponPerkListVC: UITableViewDelegate {
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // selected item
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selected_item = main_list[indexPath.row]
         print (selected_item.title + " is chosen")
-        
+
         delegate?.selectedHandgun(selected_weapon: selected_item)
-        
     }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // selected item
+//        let selected_item = main_list[indexPath.row]
+//        print (selected_item.title + " is chosen")
+//
+//        delegate?.selectedHandgun(selected_weapon: selected_item)
+//
+//    }
 }
 
 //MARK: UITableViewDataSource
-extension WeaponPerkListVC {
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension WeaponPerkListVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return main_list.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell             = tableView.dequeueReusableCell(withIdentifier: AboutCell.reuseCellID) as! CalcCell
         let calcArray       = main_list[indexPath.row]
         cell.set(calc: calcArray)
         return cell
     }
 }
+    
+    
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return main_list.count
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell             = tableView.dequeueReusableCell(withIdentifier: AboutCell.reuseCellID) as! CalcCell
+//        let calcArray       = main_list[indexPath.row]
+//        cell.set(calc: calcArray)
+//        return cell
+//    }
+
 

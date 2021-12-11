@@ -16,7 +16,6 @@
 		3617C953245F7E0F006B012A /* WeaponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3617C952245F7E0F006B012A /* WeaponController.swift */; };
 		361938832456620D00EF5E29 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361938822456620D00EF5E29 /* Inventory.swift */; };
 		3626CCCE245A821600C1944B /* WeaponPerksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626CCCD245A821600C1944B /* WeaponPerksConstants.swift */; };
-		362CF6592634BD3700D0FF38 /* PlaylistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CF6582634BD3700D0FF38 /* PlaylistItem.swift */; };
 		3630C73B245CE6C7007D88F0 /* InventoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630C73A245CE6C7007D88F0 /* InventoryHeader.swift */; };
 		36635F0E2454CC8F00055CDA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36635F0D2454CC8F00055CDA /* NetworkManager.swift */; };
 		36635F102454D55300055CDA /* YTVideoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36635F0F2454D55300055CDA /* YTVideoImageView.swift */; };
@@ -64,7 +63,6 @@
 		3617C952245F7E0F006B012A /* WeaponController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponController.swift; sourceTree = "<group>"; };
 		361938822456620D00EF5E29 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		3626CCCD245A821600C1944B /* WeaponPerksConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPerksConstants.swift; sourceTree = "<group>"; };
-		362CF6582634BD3700D0FF38 /* PlaylistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItem.swift; sourceTree = "<group>"; };
 		3630C73A245CE6C7007D88F0 /* InventoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryHeader.swift; sourceTree = "<group>"; };
 		36635F0D2454CC8F00055CDA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		36635F0F2454D55300055CDA /* YTVideoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTVideoImageView.swift; sourceTree = "<group>"; };
@@ -116,6 +114,7 @@
 			children = (
 				36056310243BDA950011DE56 /* LoU Loadout Calc */,
 				3605630F243BDA950011DE56 /* Products */,
+				665BC39C276566EA00874266 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,6 +303,13 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		665BC39C276566EA00874266 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		8D128C9325909042005BA989 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +401,6 @@
 				36663EE2243BDB2600F7B4DB /* UIView+Ext.swift in Sources */,
 				36663EEB243BE6DE00F7B4DB /* Constants.swift in Sources */,
 				36663EE3243BDB2600F7B4DB /* AboutVC.swift in Sources */,
-				362CF6592634BD3700D0FF38 /* PlaylistItem.swift in Sources */,
 				36747EEC243ECA0700D77373 /* UITabBar+Ext.swift in Sources */,
 				3630C73B245CE6C7007D88F0 /* InventoryHeader.swift in Sources */,
 				36DEDEC124400BFB00408C7A /* UITableView+UITableVC+Ext.swift in Sources */,

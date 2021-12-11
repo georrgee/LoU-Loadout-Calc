@@ -23,4 +23,14 @@ extension UITableView {
     func removeExcessCells() {
         tableFooterView = UIView(frame: .zero)
     }
+    
+    func setBGImageForTableVC() {
+        let backgroundImage = LastOfUsImages.BackgroundImage.backgroundPortrait!
+        let imageView = UIImageView(image: backgroundImage)
+        self.backgroundView = imageView
+//        let imageView = UIImageView(image: LastOfUsImages.BackgroundImage.backgroundPortrait!)
+//        imageView.contentMode = .scaleAspectFill
+//        tableView.backgroundView = imageView
+//        self.view.backgroundColor = UIColor(patternImage: LastOfUsImages.BackgroundImage.backgroundPortrait!)
+    }
 }
