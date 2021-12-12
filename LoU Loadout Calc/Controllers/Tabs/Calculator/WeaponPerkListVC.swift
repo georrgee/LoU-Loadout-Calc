@@ -5,7 +5,7 @@
 //  Created by Hao Lam on 12/21/20.
 //  Copyright © 2020 GeeTeam. All rights reserved.
 //
-// Modified by Billy Pak. 
+// Modified by Billy Pak.
 
 import UIKit
 protocol selectedHandgunDelegate {
@@ -58,9 +58,6 @@ class WeaponPerkListVC: UIViewController{
         tableView.setBGImageForTableVC()
     }
     fileprivate func configureTableView() {
-        
-        let displayWidth: CGFloat = self.view.frame.width
-        let displayHeight: CGFloat = self.view.frame.height
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
